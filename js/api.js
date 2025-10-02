@@ -1,2 +1,3 @@
-// api key : f6835a36088cef79c79d0ebc29ccae2f
-// api link: eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNjgzNWEzNjA4OGNlZjc5Yzc5ZDBlYmMyOWNjYWUyZiIsIm5iZiI6MTc1OTMyMzUwNS41NTgsInN1YiI6IjY4ZGQyNTcxY2JjYzRjNWFiYTM4Y2VlYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ku_5risvtXoFh4B1AEN9IlivVGk7DOauPbwQnXVTeDY
+export const options = {method: 'GET', headers: {accept: 'application/json', Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmNjgzNWEzNjA4OGNlZjc5Yzc5ZDBlYmMyOWNjYWUyZiIsIm5iZiI6MTc1OTMyMzUwNS41NTgsInN1YiI6IjY4ZGQyNTcxY2JjYzRjNWFiYTM4Y2VlYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ku_5risvtXoFh4B1AEN9IlivVGk7DOauPbwQnXVTeDY'}};
+
+export const api = 'https://api.themoviedb.org/3/movie/'
