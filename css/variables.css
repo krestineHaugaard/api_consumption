@@ -1,0 +1,15 @@
+:root{
+
+    --mainHeaderCol: #331225;
+    --mainFooterCol: #331225;
+    --mainNavCol: #9a001e;
+    --cardHeaderCol: #610a41;
+    --mainBGCol: #ffffff;
+    --lightTextCol: #fffcf9;
+    --darkTextCol: #1b2b31;
+    --pickedTextCol: #d3caad;
+
+    --textTitleFont: "Courier New", Courier, monospace;
+    --mainTextFont: "Arial";
+
+}

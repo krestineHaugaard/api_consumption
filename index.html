@@ -4,16 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module" src="js/api-consumption.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>API consumption | First Mandatory Assignment</title>
 </head>
 <body>
-
-    <button data-target="now_playing">Now playing</button>
-    <button data-target="popular">Popular</button>
-    <button data-target="top_rated">Top rated</button>
-    <button data-target="upcoming">Upcoming</button>
-
-    <section></section>
-    
+    <header>
+        <h1>The Movie Database</h1>
+        <nav>
+            <button data-target="now_playing">Now Playing</button>
+            <button data-target="popular">Popular</button>
+            <button data-target="top_rated">Top rated</button>
+            <button data-target="upcoming">Upcoming</button>
+        </nav>
+    </header>
+    <main>
+        <section id="movie-list">
+        </section>
+        <template id="card-template">
+            <article class="movie-card">
+                <header>
+                    <h2 class="title"></h2>
+                </header>
+                <section>
+                    <img src="" alt="">
+                    <div>
+                        <p class="movie-overview"></p>
+                        <p><strong>Original title: </strong><span class="original-title"></span></p>
+                        <p><strong>Release date: </strong><span class="release-date"></span></p>
+                    </div>
+                </section>
+            </article>
+        </template>
+    </main> 
+    <footer>
+        <p>Web dev &copy; 2025 K.H. Nielsen</p>
+    </footer>  
 </body>
 </html>

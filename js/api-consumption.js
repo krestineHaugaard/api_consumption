@@ -14,13 +14,18 @@ document.querySelectorAll("button").forEach(menuOption => {
 function apiFetch (choosenEndPoint){fetch(`${api}${choosenEndPoint}?language=en-US&page=1`, options)
   .then(res => res.json())
   .then((data) => {
-    document.querySelector("section").innerHTML = ""
-    const h2 = document.createElement("h2");
+
+    document.querySelector("#movie-list").innerHTML = ""
+
     data.results.forEach(movie => {
-        let newMovie = h2.cloneNode(true);
-        newMovie.innerText = movie.original_title;
-        document.querySelector("section").appendChild(newMovie);
-        
+        const newMovie = document.querySelector("#card-template").content.cloneNode(true);
+        newMovie.querySelector(".title").innerText = movie.title;
+        newMovie.querySelector("img").setAttribute("src", `${movie.poster_path}`);
+        newMovie.querySelector("img").setAttribute("alt", `${movie.title}`);
+        newMovie.querySelector(".movie-overview").innerText = movie.overview;
+        newMovie.querySelector(".original-title").innerText = movie.original_title;
+        newMovie.querySelector(".release-date").innerText = movie.release_date;
+        document.querySelector("#movie-list").appendChild(newMovie);
     });
   })
   .catch(err => console.error(err));
