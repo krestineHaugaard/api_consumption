@@ -4,7 +4,7 @@ bin-release/
 [Oo]bj/
 [Bb]in/
 
-api.js
+/api.js
 
 # Other files and folders
 .settings/
