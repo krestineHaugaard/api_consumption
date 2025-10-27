@@ -7,9 +7,15 @@
     --mainBGCol: #ffffff;
     --lightTextCol: #fffcf9;
     --darkTextCol: #1b2b31;
-    --pickedTextCol: #d3caad;
+    --selectedTextCol: #fff5d4;
 
     --textTitleFont: "Courier New", Courier, monospace;
     --mainTextFont: "Arial";
+
+    --fontSizeS: 0.5rem;
+    --fontSizeM: 1rem;
+    --fontSizeL: 1.2rem;
+    --fontSizeXL: 2rem;
+    --fontSizeXXL: 2.5rem;
 
 }
